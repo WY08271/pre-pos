@@ -1,5 +1,4 @@
 function collect_same_elements(collection_a, object_b) {
-  //在这里写入代码
   var result = [];
   var complete = object_b.value ;
   for(var i = 0 ; i < collection_a.length ; i ++)
@@ -12,6 +11,5 @@ function collect_same_elements(collection_a, object_b) {
   		}
   	}
   }
-  console.log(result);
   return result;
 }
