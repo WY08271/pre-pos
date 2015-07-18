@@ -7,7 +7,6 @@ function count_same_elements(collection) {
   	result.push({key:collection[i],count:count});
   	count = 1;
   }
-  console.log(result);
   return result;
 }
 function countOne(i,collection,count){

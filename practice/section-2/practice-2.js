@@ -31,6 +31,3 @@ for(var i = 0; i < collection.length; i++)
 }
   return result;
 }
-//function conuntOne(){
-
-//}

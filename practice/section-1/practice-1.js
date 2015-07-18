@@ -4,7 +4,6 @@ var result = [];
   {
     collectOne(collection_b , collection_a[i] , result);
   }
-  console.log(result);
   return result;
 }
 

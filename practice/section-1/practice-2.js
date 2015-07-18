@@ -4,7 +4,6 @@ function collect_same_elements(collection_a, collection_b) {
   {
   	collectOne(collection_a[i],collection_b,result);
   }
-  console.log(result);
   return result;
 }
 function collectOne(collection_a, collection_b,result){
