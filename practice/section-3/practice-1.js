@@ -5,6 +5,11 @@ var result = [];
 for(var i = 0; i < collection_a.length; i++)
 {
 	value = collection_a[i].key;
+	createOne(collection_b,value,collection_a[i],result);
+}
+return result;
+}
+function createOne(collection_b,value,collection_a,result){
 	var temp = 0;
 	for(var k = 0; k < collection_b.length; k++)
 	{
@@ -15,10 +20,10 @@ for(var i = 0; i < collection_a.length; i++)
 	}
 	if(temp == 1)
 	{
-		result.push({key:collection_a[i].key,count:(collection_a[i].count-1)});
+		result.push({key:collection_a.key,count:(collection_a.count-1)});
 	}
 	else if(temp == 0)
-		result.push({key:collection_a[i].key,count:collection_a[i].count});
-}
-return result;
+	{
+		result.push({key:collection_a.key,count:collection_a.count});	
+	}
 }
