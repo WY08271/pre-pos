@@ -19,15 +19,11 @@ for(var i = 0; i < collection.length; i++)
     }
     else
     {  
-      var string = collection[i];
-      for(var i = 0; i < string.length; i ++)
-      {
-        if(string[i] == 5)
-        {
-          result.push({key:collection[i],count:string[i]});
-        }
-      } 
-    }
+      var string = [];
+      string = collection[i].split('-') ;
+      result.push({key:string[0],count:string[1]});
+    }      
 }
+console.log(result);
   return result;
 }
